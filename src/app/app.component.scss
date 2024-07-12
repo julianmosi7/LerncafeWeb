@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container{
+    //100vh
+    //min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'milkyWay';
+    src: url('../assets/MilkyWalky-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ranade';
+    src: url('../assets/Ranade-Light.otf');
+}
+
+@font-face {
+    font-family: 'ranade-thin';
+    src: url('../assets/Ranade-Thin.otf');
+}
+
+.flex-container h1 {
+    font-size: 7rem;
+    font-family: 'milkyWay';
+}
+
+.flex-container h3 {
+    font-family: 'ranade';
+}
+
+.flex-container h1::selection{
+    color: white;
+}
+
+.flex-container h3::selection {
+    color: white;
+}
+
+.btn a {
+    display: none;
+}
+
+.btn {
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #e7ded7;
+    cursor: pointer;
+}
+
+.flex-container-bottom{
+     //100vh
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 15px;
+}
+
+.header-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.header-container li {
+    font-size: 1.4rem;
+    font-family: 'ranade-thin';
+    margin: 20px;
+    cursor: pointer;
+}
+
+.location-item {
+    margin-top: 40px;
+}

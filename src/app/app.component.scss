@@ -110,6 +110,18 @@
     cursor: pointer;
 }
 
+.location-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+p {
+    font-size: 22px;
+}
+
 .location-item {
     margin-top: 40px;
 }

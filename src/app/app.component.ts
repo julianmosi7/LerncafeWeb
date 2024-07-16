@@ -20,19 +20,20 @@ export class AppComponent {
   title = 'LerncafeWeb';
 
   type = 'Lern';
+  names = ['Lern', 'Work', 'Chill', 'Haus', 'Home', 'Live']
 
   ngOnInit():void {
     this.takeNumbers();
   }
   
   takeNumbers(): void {
+    let i: number = 0;
     interval(1500).subscribe(x => {
-      if (this.type === 'Lern') {
-        this.type = 'Work';
-      }else if(this.type === 'Work'){
-        this.type = 'Chill';
+      if(i < this.names.length){
+        this.type = this.names[i];
+        i++;
       }else{
-        this.type = 'Lern'
+        i = 0;
       }
     });
   }
